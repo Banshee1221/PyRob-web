@@ -26,7 +26,7 @@
             <ul class="side-nav" id="mobile-demo">
                 <li><a href="sass.html">Components</a></li>
                 <li><a href="sass.html">Supervisors</a></li>
-                <li><a href="sass.html">The Team</a></li>
+                <li><a class="modal-trigger" href="#modal1">The Team</a></li>
                 <li><a href="sass.html">Downloads</a></li>
             </ul>
         </div>
@@ -49,27 +49,60 @@
     </div>
 </div>
 
-<div id="modal1" class="modal">
+<div id="modal1" class="modal modal-fixed-footer">
     <div class="modal-content">
         <h4>PyTeacher - The Team</h4>
+        <div id="borderAdd"></div>
         <div class="row">
-            <div class="col s12">
+            <div id="spacer" class="col s12">
                 <div class="row">
-                    <div class="col s6">
-                        <img class="circle responsive-img" src="res/img/Eugene.JPG" style="width:200px;">
-                    </div>
-                    <div class="col s6">
+                   <div class="col s8">
+                        <h5>Eugene de Beste</h5>
+                        <table class="new-table">
+                           <thead>
+                           <tr>
+                               <th data-field="id">Email</th>
+                               <th data-field="name">LinkedIn</th>
+                               <th data-field="price">GitHub</th>
+                           </tr>
+                           </thead>
 
+                           <tbody>
+                           <tr>
+                               <td><a href="mailto:debeste.eugene@gmail.com" target="_blank">debeste.eugene@gmail.com</a></td>
+                               <td><a href="https://za.linkedin.com/pub/eugene-de-beste/91/35/11" target="_blank">eugene-de-beste</a></td>
+                               <td><a href="https://Github.com/Banshee1221" target="_blank">Banshee1221</a></td>
+                           </tr>
+                           </tbody>
+                        </table>
+                    </div>
+                    <div class="col s4">
+                        <img class="right-aligned circle responsive-img" src="res/img/Eugene.JPG" style="width:200px;">
                     </div>
                 </div>
             </div>
             <div class="col s12">
                 <div class="row">
-                    <div class="col s6">
-                        <img class="circle responsive-img" src="res/img/Mark.jpg" style="width:200px;" >
-                    </div>
-                    <div class="col s6">
+                    <div class="col s8">
+                        <h5>Mark Grivainis</h5>
+                        <table class="new-table">
+                            <thead>
+                            <tr>
+                                <th data-field="id">Email</th>
+                                <th data-field="price">GitHub</th>
+                            </tr>
+                            </thead>
 
+                            <tbody>
+                            <tr>
+                                <td><a href="mailto:markgrivainis@gmail.com" target="_blank">markgrivainis@gmail.com</a></td>
+                                <td><a href="https://github.com/MarkGrivainis" target="_blank">MarkGrivainis</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col s4">
+                        <img class="circle responsive-img" src="res/img/Mark.jpg" style="width:200px;" >
                     </div>
                 </div>
             </div>
