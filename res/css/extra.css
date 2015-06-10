@@ -55,14 +55,25 @@ html{
     margin-right: auto
 }
 
-#spacer{
+.spacer{
    margin-bottom: 50px;
 }
 
-#borderAdd {
+.borderAdd {
     width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+}
+
+.resp-img{
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+@media (max-width: 449px) {
+    .textWrapper {
+        content: '';
+    }
 }
 /*@media (max-width: 992px){*/
     /*nav{*/

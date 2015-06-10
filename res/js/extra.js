@@ -1,12 +1,14 @@
 $( document ).ready(function(){
     $('.button-collapse').sideNav({
-            menuWidth: 240, // Default is 240
-            edge: 'left', // Choose the horizontal origin
-            closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            menuWidth: 240,
+            edge: 'left',
+            closeOnClick: true
         }
     );
     $('.modal-trigger').leanModal({
-        dismissible: true // Modal can be dismissed by clicking outside of the modal
+        dismissible: true,
+        ready: function() { $("body").css("overflow", "hidden"); },
+        complete: function() { $("body").css("overflow", "auto"); }
     });
     $('.materialboxed').materialbox();
 })
