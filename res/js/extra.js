@@ -11,4 +11,5 @@ $( document ).ready(function(){
         complete: function() { $("body").css("overflow", "auto"); }
     });
     $('.materialboxed').materialbox();
+
 })
