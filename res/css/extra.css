@@ -1,3 +1,6 @@
+.drag-target{
+    width: 40px;
+}
 html{
     height: 100%;
 }
