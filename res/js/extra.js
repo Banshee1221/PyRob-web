@@ -1,3 +1,23 @@
+function getInternetExplorerVersion()
+{
+    var rv = -1;
+    if (navigator.appName == 'Microsoft Internet Explorer')
+    {
+        var ua = navigator.userAgent;
+        var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+        if (re.exec(ua) != null)
+            rv = parseFloat( RegExp.$1 );
+    }
+    else if (navigator.appName == 'Netscape')
+    {
+        var ua = navigator.userAgent;
+        var re  = new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})");
+        if (re.exec(ua) != null)
+            rv = parseFloat( RegExp.$1 );
+    }
+    return rv;
+}
+
 $( document ).ready(function(){
     $('.button-collapse').sideNav({
             menuWidth: 240,
@@ -12,4 +32,11 @@ $( document ).ready(function(){
     });
     $('.materialboxed').materialbox();
 
+    var ieVer = getInternetExplorerVersion();
+    if (ieVer > 0){
+        alert("true");
+        $("#teamModal").removeClass("modal-fixed-footer");
+        $("#supModal").removeClass("modal-fixed-footer");
+    }
 })
+
