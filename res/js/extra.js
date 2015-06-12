@@ -60,7 +60,10 @@ $( document ).ready(function(){
             window.location.replace("http://people.cs.uct.ac.za/~dbseug001/res/pages/browserWarning.html");
         }
     }
-    if (browser.name.toString() == "IE"){
+    if (browser.name.toString() == "IE" || browser.name.toString() == "MSIE"){
+        //alert("IE!");
+        $("#teamModal").removeClass("modal-fixed-footer");
+        $("#supModal").removeClass("modal-fixed-footer");
         if (browser.version < 10){
             window.location.replace("http://people.cs.uct.ac.za/~dbseug001/res/pages/browserWarning.html");
         }
@@ -75,9 +78,6 @@ $( document ).ready(function(){
             window.location.replace("http://people.cs.uct.ac.za/~dbseug001/res/pages/browserWarning.html");
         }
     }
-
-
-
 
 
     //var ieVer = getInternetExplorerVersion();
