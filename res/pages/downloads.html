@@ -15,19 +15,19 @@
 <div>
     <nav>
         <div id="top" class="nav-wrapper indigo">
-            <a href="/index.html" class="brand-logo">PyTeacher</a>
+            <a href="../../" class="brand-logo">PyTeacher</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i id="rightShift" class="mdi-navigation-menu"></i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="../pages/project.html">Components</a></li>
                 <li><a class="modal-trigger" href="#supModal">Supervisors</a></li>
                 <li><a class="modal-trigger" href="#teamModal">The Team</a></li>
-                <li><a href="../pages/downloads.html">Downloads</a></li>
+                <li class="active"><a href="../pages/downloads.html">Downloads</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
                 <li><a href="../pages/project.html">Components</a></li>
                 <li><a class="modal-trigger" href="#supModal">Supervisors</a></li>
                 <li><a class="modal-trigger" href="#teamModal">The Team</a></li>
-                <li><a href="../pages/downloads.html">Downloads</a></li>
+                <li class="active"><a href="../pages/downloads.html">Downloads</a></li>
             </ul>
         </div>
     </nav>
@@ -35,7 +35,7 @@
     <div class="container">
         <div class="page-header">
             <h1 id="timeline">Project Resources</h1>
-            <hr id="lineStyle" />
+            <hr class="lineStyle" />
         </div>
         <ul class="timeline">
             <li>
@@ -43,17 +43,19 @@
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h4 class="timeline-title">Literature Reviews</h4>
-                        <p><small class="text-muted"><i class="mdi-device-access-time"></i> 29 April 2015</small></p>
+                        <p class="underliner"><small class="text-muted"><i class="mdi-device-access-time"></i> 29 April 2015</small></p>
                     </div>
                     <div class="timeline-body">
                         <div class="row">
                             <div class="col m6">
-                                <h5>Eugene de Beste</h5><i class="downBut mdi-file-file-download"></i>
+                                <h5>Eugene de Beste</h5>
+                                <a href="../docs/litReviewE.pdf" target="_blank"><i class="small mdi-file-file-download"></i></a>
                                 <p>Focusing on the aspect of gamification of education, this literature review comapres
                                 various existing attempts to bring a more modern approach to teaching programming.</p>
                             </div>
                             <div class="col m6">
-                                <h5>Mark Grivainis</h5><i class="downBut mdi-file-file-download"></i>
+                                <h5>Mark Grivainis</h5>
+                                <a href="../docs/litReviewM.pdf" target="_blank"><i class="small mdi-file-file-download"></i></a>
                                 <p>This review focuses on exploring different types of visual programming environments,
                                     the effects of different video game genres in learning and why Python is a useful
                                     tool to teach beginner programming.
@@ -64,19 +66,149 @@
                 </div>
             </li>
             <li class="timeline-inverted">
-                <div class="timeline-badge warning"><img class="imgFix" src="../img/proposal.svg" style="right:9px;top:9px;width:31.7021px;"></i></div>
+                <div class="timeline-badge"><img class="imgFix" src="../img/proposal.svg" style="right:9px;top:9px;width:31.7021px;"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                        <h4 class="timeline-title">Project Proposal</h4>
+                        <p class="underliner"><small class="text-muted"><i class="mdi-device-access-time"></i> 10 June 2015</small></p>
                     </div>
                     <div class="timeline-body">
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                        <p>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.</p>
+                        <p>This is the detailed project proposal document for the PyTeacher project. It specifies all the
+                        aspects involved and a breakdown of the timeline to be followed for the project.</p>
+                        <a href="../docs/proposal.pdf" target="_blank"><i class="small mdi-file-file-download"></i></a>
                     </div>
                 </div>
             </li>
 
         </ul>
+    </div>
+
+    <div id="teamModal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4>PyTeacher - The Team</h4>
+            <div class="borderAdd"></div>
+            <div class="row">
+                <div class="spacer" class="col s12">
+                    <div class="row">
+                        <div class="col m8">
+                            <h5 style="margin-bottom:20px;">Eugene de Beste</h5>
+                            <table class="new-table">
+                                <thead>
+                                <tr>
+                                    <th data-field="id">Email</th>
+                                    <th data-field="name">LinkedIn</th>
+                                    <th data-field="price">GitHub</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr>
+                                    <td><a href="mailto:debeste.eugene@gmail.com" target="_blank">debeste.eugene@gmail.com</a></td>
+                                    <td><a href="https://za.linkedin.com/pub/eugene-de-beste/91/35/11" target="_blank">eugene-de-beste</a></td>
+                                    <td><a href="https://Github.com/Banshee1221" target="_blank">Banshee1221</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col m4">
+                            <img class="circle resp-img" src="../img/Eugene.JPG" style="width:200px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="row">
+                        <div class="col m8">
+                            <h5 style="margin-bottom:20px;">Mark Grivainis</h5>
+                            <table class="new-table">
+                                <thead>
+                                <tr>
+                                    <th data-field="id">Email</th>
+                                    <th data-field="price">GitHub</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr>
+                                    <td><a class="textWrapper" href="mailto:markgrivainis@gmail.com" target="_blank">markgrivainis@gmail.com</a></td>
+                                    <td><a href="https://github.com/MarkGrivainis" target="_blank">MarkGrivainis</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col m4">
+                            <img class="circle resp-img" src="../img/Mark.jpg" style="width:200px;" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="supModal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4>PyTeacher - Supervisors</h4>
+            <div id="borderAdd"></div>
+            <div class="row">
+                <div class="spacer" class="col s12">
+                    <div class="row">
+                        <div class="col m8">
+                            <h5 style="margin-bottom:20px;">Gary Stewart - Supervisor</h5>
+                            <table class="new-table">
+                                <thead>
+                                <tr>
+                                    <th data-field="id">Email</th>
+                                    <th data-field="name">Telephone</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr>
+                                    <td><a href="mailto:gstewart@cs.uct.ac.za" target="_blank">gstewart@cs.uct.ac.za</a></td>
+                                    <td>+27 21 650 2665</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col m4">
+                            <img class="circle resp-img" src="../img/gary.jpg" style="width:200px;height:200px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="row">
+                        <div class="col m8">
+                            <h5 style="margin-bottom:20px;">James Gain - Co-supervisor</h5>
+                            <table class="new-table">
+                                <thead>
+                                <tr>
+                                    <th data-field="id">Email</th>
+                                    <th data-field="price">Telephone</th>
+                                    <th data-field="name">Website</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr>
+                                    <td><a class="textWrapper" href="mailto:jgain@cs.uct.ac.za" target="_blank">jgain@cs.uct.ac.za</a></td>
+                                    <td>+27 21 650 4058</td>
+                                    <td><a class="textWrapper" href="http://people.cs.uct.ac.za/~jgain/" target="_blank">jgain@UCT</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col m4">
+                            <img class="circle resp-img" src="../img/james.jpg" style="width:200px;height:200px;" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat">Close</a>
+        </div>
     </div>
 
     <footer class="page-footer indigo lighten-1">
@@ -90,17 +222,15 @@
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Links</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                        <li><a class="grey-text text-lighten-3" href="http://www.cs.uct.ac.za/">UCT Computer Science</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.blender.org/">Blender</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-copyright indigo">
             <div class="container">
-                Last Updated: 11/06/2015
+                Last Updated: 12/06/2015
             </div>
         </div>
     </footer>
