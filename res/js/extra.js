@@ -57,22 +57,22 @@ $( document ).ready(function(){
     if (browser.name.toString() == "Chrome"){
         alert("Chrome!")
         if (browser.version < 35){
-            window.location.replace("http://people.cs.uct.ac.za/~dbseug001/pages/browserWarning.html");
+            window.location.replace("http://people.cs.uct.ac.za/~dbseug001/res/pages/browserWarning.html");
         }
     }
     if (browser.name.toString() == "IE"){
         if (browser.version < 10){
-            window.location.replace("http://people.cs.uct.ac.za/~dbseug001/pages/browserWarning.html");
+            window.location.replace("http://people.cs.uct.ac.za/~dbseug001/res/pages/browserWarning.html");
         }
     }
     if (browser.name.toString() == "Firefox"){
         if (browser.version < 31){
-            window.location.replace("http://people.cs.uct.ac.za/~dbseug001/pages/browserWarning.html");
+            window.location.replace("http://people.cs.uct.ac.za/~dbseug001/res/pages/browserWarning.html");
         }
     }
     if (browser.name.toString() == "Safari"){
         if (browser.version < 7) {
-            window.location.replace("http://people.cs.uct.ac.za/~dbseug001/pages/browserWarning.html");
+            window.location.replace("http://people.cs.uct.ac.za/~dbseug001/res/pages/browserWarning.html");
         }
     }
 
