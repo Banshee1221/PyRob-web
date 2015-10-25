@@ -115,6 +115,55 @@ $(function () {
         }
     });
 
+    /*
+    $('#chartContainer4').highcharts({
+            chart: {
+                type: 'bar'
+            },
+            xAxis: [{
+//                categories: categories,
+                reversed: false
+            }, { // mirror axis on right side
+                opposite: true,
+                reversed: false,
+                //categories: categories,
+                linkedTo: 0
+            }],
+               
+            plotOptions: {
+                series: {
+                    stacking: 'normal',
+                    borderWidth: 0
+                }
+            },
+  
+            
+    
+            series: [{
+                name: 'Strongly Disagree',
+                data: [-10, -5, -6]
+            }, {
+                name: 'Disagree',
+                data: [-2, -5, -3]
+            }, {
+                name: 'Neutral',
+                data: [-2, -5, -3],
+                color: 'gray',
+                id: 'neutral'
+            },{
+                name: 'Strongly Agree',
+                data: [5, 1,6]
+            },{
+                name: 'Agree',
+                data: [6, 8, 2]
+            },{
+                name: 'Neutral',
+                data: [2, 5, 3],
+                color: 'gray',
+                linkedTo: 'neutral'
+            }]
+        });
+        */
 
     $('#chartContainer4').highcharts({
         chart: {
@@ -138,10 +187,10 @@ $(function () {
             minPadding: 0,
             maxPadding: 0,
             min: 0,
-            max:6,
+            max:5,
             categories: [0, 'Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
             tickInterval:1,
-            showLastLabel: false,
+            //showLastLabel: false,
             showFirstLabel: false,
             labels: {
                 enabled: true,
@@ -208,7 +257,6 @@ $(function () {
         }
     });
 
-
     $('#chartContainer6').highcharts({
         chart: {
             type: 'column'
@@ -231,10 +279,10 @@ $(function () {
             minPadding: 0,
             maxPadding: 0,
             min: 0,
-            max:6,
+            max:5,
             categories: [0, 'Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
             tickInterval:1,
-            showLastLabel: false,
+            //showLastLabel: false,
             showFirstLabel: false,
             labels: {
                 enabled: true,

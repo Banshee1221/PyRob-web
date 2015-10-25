@@ -1,22 +1,17 @@
-/*.drag-target{*/
-    /*width: 40px;*/
-/*}*/
-html{
-    height: 100%;
-}
-
 body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
     background-color: #eeeeee
 }
-/*body {*/
-    /*display: flex;*/
-    /*min-height: 100vh;*/
-    /*flex-direction: column;*/
-/*}*/
+main {
+    flex: 1 0 auto;
+}
 
-/*main {*/
-    /*flex: 1 0 auto;*/
-/*}*/
+#projectPage {
+    margin-top: 100px;
+}
+
 #graphsText {
     text-align: center;
 }
@@ -91,14 +86,6 @@ body{
         content: '';
     }
 }
-/*@media (max-width: 992px){*/
-    /*nav{*/
-        /*height: 150px !important;*/
-    /*}*/
-    /*.brand-logo{*/
-        /*font-size: 100px;*/
-    /*}*/
-/*}*/
 
 table.new-table {
     width: 100%;

@@ -21,45 +21,38 @@
 </head>
 <main>
 
-    <nav>
-        <div id="top" class="nav-wrapper indigo">
-            <a id="mainName" href="../../" class="brand-logo"><i class="right left mdi-action-home"></i>PyTeacher</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i id="rightShift" class="mdi-navigation-menu"></i></a>
-            <ul class="right hide-on-med-and-down">
-                <li class="active"><a href="../pages/project.html">Components</a></li>
-                <li><a class="modal-trigger" href="#supModal">Supervisors</a></li>
-                <li><a class="modal-trigger" href="#teamModal">The Team</a></li>
-                <li><a href="../pages/time.html">Timeline</a></li>
-                <li><a href="../pages/downloads.html">Downloads</a></li>
-                <li><a href="../pages/data.html">Data</a></li>
-            </ul>
-            <ul class="side-nav" id="mobile-demo">
-                <li class="active"><a href="../pages/project.html">Components</a></li>
-                <li><a class="modal-trigger" href="#supModal">Supervisors</a></li>
-                <li><a class="modal-trigger" href="#teamModal">The Team</a></li>
-                <li><a href="../pages/time.html">Timeline</a></li>
-                <li><a href="../pages/downloads.html">Downloads</a></li>
-                <li><a href="../pages/data.html">Data</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div>
+        <nav>
+            <div id="top" class="nav-wrapper indigo">
+                <a id="mainName" href="../../" class="brand-logo"><i class="right left mdi-action-home"></i>PyTeacher</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i id="rightShift" class="mdi-navigation-menu"></i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="../pages/project.html">Components</a></li>
+                    <li><a class="modal-trigger" href="#supModal">Supervisors</a></li>
+                    <li><a class="modal-trigger" href="#teamModal">The Team</a></li>
+                    <li class="active"><a href="#">Timeline</a></li>
+                    <li><a href="../pages/downloads.html">Downloads</a></li>
+                    <li><a href="../pages/data.html">Data</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="../pages/project.html">Components</a></li>
+                    <li><a class="modal-trigger" href="#supModal">Supervisors</a></li>
+                    <li><a class="modal-trigger" href="#teamModal">The Team</a></li>
+                    <li class="active"><a href="#">Timeline</a></li>
+                    <li><a href="../pages/downloads.html">Downloads</a></li>
+                    <li><a href="../pages/data.html">Data</a></li>
+                </ul>
+            </div>
+        </nav>
 
         <div class="container">
-            <div id="projectPage" class="row">
-                <div class="col s6">
-                    <a href="eugene.html">
-                        <img class="titleImg svg" src="../img/controller.svg">
-                        <p style="text-align: center">Games as a Means of Education</p>
-                    </a>
-                </div>
-                <div class="col s6">
-                    <a href="mark.html">
-                        <img class="titleImg svg" src="../img/attention.svg">
-                        <p style="text-align: center">A State of Flow in Educational Games</p>
-                    </a>
-                </div>
-            </div>
+            <h1 class="center-align">Timeline</h1>
+            <hr class="lineStyle" />
+            <div style='width:90%; margin:0 auto; background:#eeeeee; border:1px #cbcbcb solid;'>
+                <iframe src='https://teamgantt.com/gantt/schedule/?ids=388327&public_keys=yLBlRLBXGw2f&zoom=d100&font_size=12&estimated_hours=0&assigned_resources=0&percent_complete=0&documents=0&comments=0&col_width=355&menu_view=1&resource_filter=1&name_in_bar=0&name_next_to_bar=0&resource_names=1' style='width:100%; height:800px; border-bottom:1px #cbcbcb solid;' frameborder='0';></iframe>
+                <a href='http://teamgantt.com' target='_blank' style='display:block; text-align:right; background:url(https://teamgantt.com/images/powered_by_teamgantt.png) right center no-repeat; height:0; padding-top:20px; overflow:hidden; padding-right:1px;'>Online Gantt Chart</a>
         </div>
+    </div>
 
         <div id="teamModal" class="modal modal-fixed-footer">
             <div class="modal-content">
@@ -188,7 +181,7 @@
                 <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat">Close</a>
             </div>
         </div>
-    </main>
+</main>
 
     <footer class="page-footer indigo lighten-1">
         <div class="container">
@@ -215,6 +208,4 @@
         </div>
     </footer>
 
-
-</body>
 </html>
