@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>PyTeacher | Downloads</title>
+    <title>PyTeacher | Data</title>
     <!--[if lte IE 9]>
     <meta http-equiv="refresh" content="0;url=http://people.cs.uct.ac.za/~dbseug001/../pages/browserWarning.html" />
     <![endif]-->
@@ -13,6 +13,8 @@
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="../js/materialize.min.js"></script>
     <script src="../js/extra.js"></script>
+    <script src="../js/highcharts.js"></script>
+    <script src="../js/graphs.js"
     <!--<![endif]-->
     <!--[if lt IE 9]>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -20,7 +22,6 @@
     <script src="../js/compatability.js"></script>
 </head>
 <body>
-
 <div>
     <nav>
         <div id="top" class="nav-wrapper indigo">
@@ -30,68 +31,48 @@
                 <li><a href="../pages/project.html">Components</a></li>
                 <li><a class="modal-trigger" href="#supModal">Supervisors</a></li>
                 <li><a class="modal-trigger" href="#teamModal">The Team</a></li>
-                <li class="active"><a href="../pages/downloads.html">Downloads</a></li>
-                <li><a href="../pages/data.html">Data</a></li>
+                <li><a href="../pages/downloads.html">Downloads</a></li>
+                <li class="active"><a href="#">Data</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
                 <li><a href="../pages/project.html">Components</a></li>
                 <li><a class="modal-trigger" href="#supModal">Supervisors</a></li>
                 <li><a class="modal-trigger" href="#teamModal">The Team</a></li>
-                <li class="active"><a href="../pages/downloads.html">Downloads</a></li>
-                <li><a href="../pages/data.html">Data</a></li>
+                <li><a href="../pages/downloads.html">Downloads</a></li>
+                <li class="active"><a href="../pages/data.html">Data</a></li>
             </ul>
         </div>
     </nav>
+</div>
 
     <div class="container">
-        <div class="page-header">
-            <h1 id="timeline">Project Resources</h1>
+        <div id="graphs" class="page-header">
+            <h1 id="graphsText">Graphs</h1>
             <hr class="lineStyle" />
         </div>
-        <ul class="timeline">
-            <li>
-                <div class="timeline-badge"><img class="imgFix" src="../img/litreview.svg" /></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Literature Reviews</h4>
-                        <p class="underliner"><small class="text-muted"><i class="mdi-device-access-time"></i> 29 April 2015</small></p>
-                    </div>
-                    <div class="timeline-body">
-                        <div class="row">
-                            <div class="col m6">
-                                <h5>Eugene de Beste</h5>
-                                <a href="../docs/litReviewE.pdf" target="_blank"><i class="small mdi-file-file-download"></i></a>
-                                <p>Focusing on the aspect of gamification of education, this literature review comapres
-                                various existing attempts to bring a more modern approach to teaching programming.</p>
-                            </div>
-                            <div class="col m6">
-                                <h5>Mark Grivainis</h5>
-                                <a href="../docs/litReviewM.pdf" target="_blank"><i class="small mdi-file-file-download"></i></a>
-                                <p>This review focuses on exploring different types of visual programming environments,
-                                    the effects of different video game genres in learning and why Python is a useful
-                                    tool to teach beginner programming.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-badge"><img class="imgFix" src="../img/proposal.svg" style="right:9px;top:9px;width:31.7021px;"></i></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4 class="timeline-title">Project Proposal</h4>
-                        <p class="underliner"><small class="text-muted"><i class="mdi-device-access-time"></i> 10 June 2015</small></p>
-                    </div>
-                    <div class="timeline-body">
-                        <p>This is the detailed project proposal document for the PyTeacher project. It specifies all the
-                        aspects involved and a breakdown of the timeline to be followed for the project.</p>
-                        <a href="../docs/proposal.pdf" target="_blank"><i class="small mdi-file-file-download"></i></a>
-                    </div>
-                </div>
-            </li>
+        <div class="row">
 
-        </ul>
+            <div class="col m6">
+                <div id="chartContainer1" style="width:100%; height:400px;"></div>
+            </div>
+            <div class="col m6">
+                <div id="chartContainer2" style="width:100%; height:400px;"></div>
+            </div>
+
+            <div class="col m6">
+                <div id="chartContainer3" style="width:100%; height:400px;"></div>
+            </div>
+            <div class="col m6">
+                <div id="chartContainer4" style="width:100%; height:400px;"></div>
+            </div>
+
+            <div class="col m6">
+                <div id="chartContainer5" style="width:100%; height:400px;"></div>
+            </div>
+            <div class="col m6">
+                <div id="chartContainer6" style="width:100%; height:400px;"></div>
+            </div>
+        </div>
     </div>
 
     <div id="teamModal" class="modal modal-fixed-footer">
@@ -246,9 +227,6 @@
             </div>
         </div>
     </footer>
-
-
-</div>
 
 </body>
 </html>

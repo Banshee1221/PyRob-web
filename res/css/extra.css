@@ -17,7 +17,9 @@ body{
 /*main {*/
     /*flex: 1 0 auto;*/
 /*}*/
-
+#graphsText {
+    text-align: center;
+}
 #navWrap {
     height: 464px;
 }
@@ -357,6 +359,12 @@ table.new-table.bordered tbody tr {
         border-right-width: 14px;
         left: -14px;
         right: auto;
+    }
+}
+
+@media (max-width: 393px) {
+    #mainName {
+        display: none;
     }
 }
 
