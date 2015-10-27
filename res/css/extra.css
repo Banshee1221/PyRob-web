@@ -359,4 +359,14 @@ table.new-table.bordered tbody tr {
     width: 50%;
 }
 
+@media (max-width: 951px) {
+    .overrideCol {
+        width: 100% !important;
+    }
+}
+@media (min-width: 952px) {
+    .overrideCol {
+    }
+}
+
 
