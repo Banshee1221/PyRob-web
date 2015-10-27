@@ -30,7 +30,9 @@ $( document ).ready(function(){
         complete: function() { $("body").css("overflow", "auto"); }
     });
     $('.materialboxed').materialbox();
-
+    $(".dropdown-button").dropdown(
+        { hover: true }
+    );
     //credit to kennebec https://stackoverflow.com/users/80860/kennebec - stackoverflow
 
 

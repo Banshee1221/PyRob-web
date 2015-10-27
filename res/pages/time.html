@@ -2,13 +2,14 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>PyTeacher | Project</title>
+    <title>PyTeacher | Timeline</title>
     <!--[if lte IE 9]>
     <meta http-equiv="refresh" content="0;url=http://people.cs.uct.ac.za/~dbseug001/../pages/browserWarning.html" />
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link rel="stylesheet" href="../css/materialize.min.css">
     <link rel="stylesheet" href="../css/extra.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--[if !(IE)]><!-->
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="../js/materialize.min.js"></script>
@@ -20,30 +21,46 @@
     <script src="../js/compatability.js"></script>
 </head>
 <main>
-
-    <div>
-        <nav>
-            <div id="top" class="nav-wrapper indigo">
-                <a id="mainName" href="../../" class="brand-logo"><i class="right left mdi-action-home"></i>PyTeacher</a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i id="rightShift" class="mdi-navigation-menu"></i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="../pages/project.html">Components</a></li>
-                    <li><a class="modal-trigger" href="#supModal">Supervisors</a></li>
-                    <li><a class="modal-trigger" href="#teamModal">The Team</a></li>
-                    <li class="active"><a href="#">Timeline</a></li>
-                    <li><a href="../pages/downloads.html">Downloads</a></li>
-                    <li><a href="../pages/data.html">Data</a></li>
-                </ul>
-                <ul class="side-nav" id="mobile-demo">
-                    <li><a href="../pages/project.html">Components</a></li>
-                    <li><a class="modal-trigger" href="#supModal">Supervisors</a></li>
-                    <li><a class="modal-trigger" href="#teamModal">The Team</a></li>
-                    <li class="active"><a href="#">Timeline</a></li>
-                    <li><a href="../pages/downloads.html">Downloads</a></li>
-                    <li><a href="../pages/data.html">Data</a></li>
-                </ul>
-            </div>
-        </nav>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="project.html">Overview</a></li>
+        <li><a href="eugene.html">Eugene</a></li>
+        <li><a href="mark.html">Mark</a></li>
+    </ul>
+    <nav>
+        <div id="top" class="nav-wrapper indigo">
+            <a id="mainName" href="../../" class="brand-logo"><i class="right left mdi-action-home"></i>PyTeacher</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i id="rightShift" class="mdi-navigation-menu"></i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Components<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="modal-trigger" href="#supModal">Supervisors</a></li>
+                <li><a class="modal-trigger" href="#teamModal">The Team</a></li>
+                <li class="active"><a href="#">Timeline</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="data.html">Data</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Components<i class="mdi-navigation-arrow-drop-down"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="project.html">Overview</a></li>
+                                    <li><a href="eugene.html">Eugene</a></li>
+                                    <li><a href="mark.html">Mark</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="modal-trigger" href="#supModal">Supervisors</a></li>
+                <li><a class="modal-trigger" href="#teamModal">The Team</a></li>
+                <li class="active"><a href="#">Timeline</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="data.html">Data</a></li>
+            </ul>
+        </div>
+    </nav>
 
         <div class="container">
             <h1 class="center-align">Timeline</h1>
