@@ -33,6 +33,9 @@ $( document ).ready(function() {
         if (browser.version < 10) {
             window.location.replace("http://people.cs.uct.ac.za/~dbseug001/res/pages/browserWarning.html");
         }
+        else {
+            $("#title").css("margin-top", "-200px")
+        }
     }
     if (browser.name.toString() == "Firefox") {
         if (browser.version < 31) {
