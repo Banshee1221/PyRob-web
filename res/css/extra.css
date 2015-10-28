@@ -364,6 +364,7 @@ table.new-table.bordered tbody tr {
         width: 100% !important;
     }
 }
+
 @media (min-width: 952px) {
     .overrideCol {
     }

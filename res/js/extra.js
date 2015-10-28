@@ -35,15 +35,41 @@ $( document ).ready(function(){
     );
     $('.scrollspy').scrollSpy();
 
-    $("#toc").css("position", "absolute").css("top", "150px").css("right", "101px");
+    if ($(window).width() > 992) {
+        $("#toc").css("position", "absolute").css("top", "150px").css("right", "101px");
+    }
+    else {
+        $("#toc").css("position", "absolute").css("top", "150px").css("right", "0px");
+    }
+
     $(window).on('scroll', function() {
         scrollPosition = $(this).scrollTop();
-        if (scrollPosition >= 100) {
-            // If the function is only supposed to fire once
-            $("#toc").css("position", "fixed").css("top", "20px").css("right", "101px");
+        if ($(window).width() > 992) {
+            if (scrollPosition >= 100) {
+                // If the function is only supposed to fire once
+                $("#toc").css("position", "fixed").css("top", "20px").css("right", "101px");
+            }
+            else {
+                $("#toc").css("position", "absolute").css("top", "150px").css("right", "101px");
+            }
         }
         else {
+            if (scrollPosition >= 100) {
+                // If the function is only supposed to fire once
+                $("#toc").css("position", "fixed").css("top", "20px").css("right", "0px");
+            }
+            else {
+                $("#toc").css("position", "absolute").css("top", "150px").css("right", "0px");
+            }
+        }
+    });
+
+    $(window).resize(function() {
+        if ($(window).width() > 992) {
             $("#toc").css("position", "absolute").css("top", "150px").css("right", "101px");
+        }
+        else {
+            $("#toc").css("position", "absolute").css("top", "150px").css("right", "0px");
         }
     });
     //credit to kennebec https://stackoverflow.com/users/80860/kennebec - stackoverflow
