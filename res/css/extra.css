@@ -365,8 +365,9 @@ table.new-table.bordered tbody tr {
     }
 }
 
-@media (min-width: 952px) {
-    .overrideCol {
+@media (max-width: 992px) {
+    #colFix {
+        width: 100% !important;
     }
 }
 
