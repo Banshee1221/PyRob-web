@@ -33,6 +33,19 @@ $( document ).ready(function(){
     $(".dropdown-button").dropdown(
         { hover: true }
     );
+    $('.scrollspy').scrollSpy();
+
+    $("#toc").css("position", "absolute").css("top", "150px").css("right", "101px");
+    $(window).on('scroll', function() {
+        scrollPosition = $(this).scrollTop();
+        if (scrollPosition >= 100) {
+            // If the function is only supposed to fire once
+            $("#toc").css("position", "fixed").css("top", "20px").css("right", "101px");
+        }
+        else {
+            $("#toc").css("position", "absolute").css("top", "150px").css("right", "101px");
+        }
+    });
     //credit to kennebec https://stackoverflow.com/users/80860/kennebec - stackoverflow
 
 
