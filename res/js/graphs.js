@@ -4,7 +4,7 @@ $(function () {
             type: 'column'
         },
         title: {
-            text: 'Feasibility Survey'
+            text: 'Figure 1 - Feasibility Survey'
         },
         xAxis: {
             title:{
@@ -37,7 +37,7 @@ $(function () {
             type: 'column'
         },
         title: {
-            text: 'Video Game Genre Interests'
+            text: 'Figure 2 - Video Game Genre Interests'
         },
         xAxis: {
             title:{
@@ -72,7 +72,7 @@ $(function () {
             type: 'column'
         },
         title: {
-            text: 'User Testing #1 Feedback'
+            text: 'Figure 3 - User Testing #1 Feedback'
         },
         xAxis: {
             title:{
@@ -167,7 +167,7 @@ $(function () {
 
     $('#chartContainer4').highcharts({
         title: {
-            text: 'User Testing #1 Feedback - Likert Scale'
+            text: 'Figure 4 - User Testing #1 Feedback - Likert Scale'
         },
         xAxis: {
             title:{
@@ -219,7 +219,7 @@ $(function () {
             type: 'column'
         },
         title: {
-            text: 'User Testing #2 Feedback'
+            text: 'Figure 5 - User Testing #2 Feedback'
         },
         xAxis: {
             title:{
@@ -264,7 +264,7 @@ $(function () {
 
     $('#chartContainer6').highcharts({
             title: {
-                text: 'User Testing #2 Feedback - Likert Scale'
+                text: 'Figure 6 - User Testing #2 Feedback - Likert Scale'
             },
             xAxis: {
                 title:{
@@ -316,7 +316,7 @@ $(function () {
             type: 'column'
         },
         title: {
-            text: 'User Testing #2 Feedback - Flow Questions Set 1'
+            text: 'Figure 7 - Flow Questions Set 1'
         },
         xAxis: {
             title:{
@@ -376,7 +376,7 @@ $(function () {
             type: 'column'
         },
         title: {
-            text: 'User Testing #2 Feedback - Flow Questions Set 2'
+            text: 'Figure 8 - Flow Questions Set 2'
         },
         xAxis: {
             title:{
@@ -434,7 +434,7 @@ $(function () {
             type: 'column'
         },
         title: {
-            text: 'User Testing #2 Feedback - Flow Questions Set 2'
+            text: 'Figure 9 - Flow Questions Set 3'
         },
         xAxis: {
             title:{
@@ -492,7 +492,7 @@ $(function () {
             type: 'column'
         },
         title: {
-            text: 'User Testing #2 Feedback - Flow Questions Set 2'
+            text: 'Figure 10 - Flow Questions Set 4'
         },
         xAxis: {
             title:{
