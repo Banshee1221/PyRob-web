@@ -31,7 +31,7 @@ $( document ).ready(function(){
     });
     $('.materialboxed').materialbox();
     $(".dropdown-button").dropdown(
-        { hover: true }
+        { hover: false }
     );
     $('.scrollspy').scrollSpy();
 
