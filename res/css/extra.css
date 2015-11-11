@@ -25,13 +25,13 @@ main {
 
 #downBut1{
     position: absolute;
-    right: calc(50% - 75.703px);
+    right: calc(50% - 97.3595px);
     top:50%;
 }
 
 #downBut2{
     position: absolute;
-    right: calc(50% - 75.703px);
+    right: calc(50% - 97.3595px);
     top:calc(50% + 54px);
 }
 
