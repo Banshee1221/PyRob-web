@@ -9,18 +9,18 @@ main {
 }
 
 #compFix {
-    width: 170px;
+    min-width: 250px;
 }
 
 #graphsText {
     text-align: center;
 }
 #navWrap {
-    height: 464px;
+    height: 314px;
 }
 #extender{
     position: relative;
-    height: 400px;
+    height: 250px;
 }
 
 #downBut1{
@@ -46,7 +46,8 @@ main {
 
 #title{
     width: 100%;
-    margin-top:-64px;
+    margin-top: -20px !important;
+    margin-bottom: 0px;
 }
 
 #titleRow {
@@ -389,7 +390,7 @@ table.new-table.bordered tbody tr {
     }
 }
 
-#appA {
-    margin-top: 70px;
+#toc {
+    margin-top: -70px;
 }
 

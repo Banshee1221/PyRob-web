@@ -84,5 +84,15 @@ $( document ).ready(function(){
     //if (ieVer > 0 && ieVer < 12){
     //
     //}
-})
+});
+
+$( document ).scroll(function() {
+    if ($( document ).scrollTop() >= 100) {
+        // user scrolled 50 pixels or more;
+        // do stuff
+       $('#toc').css("margin-top", "0px");
+    } else {
+        $('#toc').css("margin-top", "-70px");
+    }
+});
 
