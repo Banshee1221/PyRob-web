@@ -18,6 +18,7 @@ function get_browser_info(){
 
 $( document ).ready(function() {
     var browser = get_browser_info();
+    console.log("Browser:",browser.name.toString(),"| ver:",browser.version.toString());
     //alert(browser.name + browser.version);
 
     if (browser.name.toString() == "Chrome") {
@@ -35,6 +36,12 @@ $( document ).ready(function() {
         }
         else {
             $("#title").css("margin-top", "-200px")
+            $("body").css("height", "100vh");
+            $("html").css("height", "100vh");
+            $("main").css("margin", "0 auto -21px");
+            $("footer").css("height", "21px").css("margin-bottom", "2px");
+            $("#push").css("height", "21px").css("margin-bottom", "2    px");
+
         }
     }
     if (browser.name.toString() == "Firefox") {
