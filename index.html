@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
     <title>PyTeacher - An Interactive Programming Learning Environment</title>
@@ -21,6 +23,7 @@
     <![endif]-->
     <script src="res/js/compatability.js"></script>
 </head>
+
 <main>
 
     <div id="navWrap">
@@ -31,17 +34,20 @@
         </ul>
         <nav>
             <div id="top" class="nav-wrapper indigo">
-                <a id="mainName" href="." class="brand-logo"><i class="right left mdi-action-home"></i>PyTeacher</a>
+                <a id="mainName" href="index.html" class="brand-logo"
+                   style="padding-left:20px;background-color:#3949a3;"><i class="right left mdi-action-home"></i>PyTeacher</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i id="rightShift"
                                                                                     class="mdi-navigation-menu"></i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a id="compFix" class="dropdown-button" href="#!" data-activates="dropdown1">Components Breakdown<i
-                            class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a id="compFix" class="dropdown-button" href="#!" data-activates="dropdown1">Components
+                        Breakdown<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
                     <li><a class="modal-trigger" href="#supModal">Supervisors</a></li>
                     <li><a class="modal-trigger" href="#teamModal">The Team</a></li>
                     <li><a href="res/pages/time.html">Timeline</a></li>
                     <li><a href="res/pages/downloads.html">Downloads</a></li>
                     <li><a href="res/pages/data.html">Appendicies</a></li>
+                    <li><a href="res/pages/credits.html">Credits</a></li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
                     <li class="no-padding">
@@ -64,6 +70,7 @@
                     <li><a href="res/pages/time.html">Timeline</a></li>
                     <li><a href="res/pages/downloads.html">Downloads</a></li>
                     <li><a href="res/pages/data.html">Appendicies</a></li>
+                    <li><a href="res/pages/credits.html">Credits</a></li>
                 </ul>
             </div>
             <div id="extender" class="indigo lighten-1">
@@ -74,32 +81,34 @@
         </nav>
     </div>
 
-    <div id="titleRow" class="row">
-        <div class="col m4">
-            <img class="titleImg" id="img1" src="res/img/book.png"/>
-
-            <p class="titleText">PyTeacher is a software package, a video game, that aims to make introductory computer
-                science easier and more fun to learn. Education is the core purpose and this means posing levels that
-                encourage players to think critically and programmatically, as well as use their knowledge of computer
-                science concepts to progress.
+    <div class="container">
+        <div id="titleRow" class="row">
+            <div class="col m4">
+                <img class="titleImg" id="img1" src="res/img/book.png"/>
+                <p class="promo-caption">Computer Science Concepts</p>
+                <p class="titleText">PyTeacher is a software package, a video game, that aims to make introductory computer
+                    science easier and more fun to learn. Education is the core purpose and this means posing levels that
+                    encourage players to think critically and programmatically, as well as use their knowledge of computer
+                    science concepts to progress.
                 </p>
-        </div>
-        <div class="col m4">
-            <img class="titleImg" id="img2" src="res/img/controller.png"/>
-
-            <p class="titleText">Video games are fun, addictive and engaging. Traditional education is not always. By
-                using the concept of gaming and applying it to a traditional introductory
-                computer science course, PyTeacher aims to provide an exciting complementary platform to this course
-                allowing students to explore concepts and ideas at their own pace and very
-                visually.</p>
-        </div>
-        <div class="col m4">
-            <img class="titleImg" id="img3" src="res/img/python.png"/>
-
-            <p class="titleText">Python is a programming language designed to be simple and easy to learn, while still
-                being powerful and flexible. It has proven itself a useful tool to educate first time computer science
-                students, and as such is the core of what PyTeacher is based around. Players use Python syntax to
-                interact with the game.</p>
+            </div>
+            <div class="col m4">
+                <img class="titleImg" id="img2" src="res/img/controller.png"/>
+                <p class="promo-caption">Education that feels Engaging</p>
+                <p class="titleText">Video games are fun, addictive and engaging. Traditional education is not always. By
+                    using the concept of gaming and applying it to a traditional introductory
+                    computer science course, PyTeacher aims to provide an exciting complementary platform to this course
+                    allowing students to explore concepts and ideas at their own pace and very
+                    visually.</p>
+            </div>
+            <div class="col m4">
+                <img class="titleImg" id="img3" src="res/img/python.png"/>
+                <p class="promo-caption">The Familiar Python Syntax</p>
+                <p class="titleText">Python is a programming language designed to be simple and easy to learn, while still
+                    being powerful and flexible. It has proven itself a useful tool to educate first time computer science
+                    students, and as such is the core of what PyTeacher is based around. Players use Python syntax to
+                    interact with the game.</p>
+            </div>
         </div>
     </div>
 
@@ -176,7 +185,7 @@
         <div class="modal-content">
             <h4>PyTeacher - Supervisors</h4>
 
-            <div id="borderAdd"></div>
+            <div class="borderAdd"></div>
             <div class="row">
                 <div class="spacer" class="col s12">
                     <div class="row">
@@ -241,33 +250,10 @@
     </div>
 </main>
 
-<footer class="page-footer indigo lighten-1">
-    <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">Credits</h5>
-
-                <p class="grey-text text-lighten-4">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>
-                    from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a
-                            href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY
-                        3.0</a>
-                    <br/>Responsive <a href="http://bootsnipp.com/snippets/featured/timeline-responsive">Timeline</a> by
-                    <a href="http://bootsnipp.com/luisrudge">luisrudge</a></p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                    <li><a class="grey-text text-lighten-3" href="http://www.cs.uct.ac.za/">UCT Computer Science</a>
-                    </li>
-                    <li><a class="grey-text text-lighten-3" href="https://www.blender.org/">Blender</a></li>
-                    <li><a class="grey-text text-lighten-3" href="https://www.python.org/">Python</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="footer-copyright indigo">
-        <div class="container">
-            Last Updated: 15/11/2015
+<footer>
+    <div class="indigo">
+        <div class="footer-copyright container light" style="color:rgba(255,255,255,0.8)">
+            Last Updated: 16/11/2015
         </div>
     </div>
 </footer>

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
-    <title>PyTeacher | Gamification</title>
+    <title>PyTeacher | Visual Learning and Games in Education</title>
     <link rel="icon" type="image/jpeg" href="../img/uct_favicon.jpg">
     <!--[if lte IE 9]>
-    <meta http-equiv="refresh" content="0;url=http://people.cs.uct.ac.za/~dbseug001/../pages/browserWarning.html" />
+    <meta http-equiv="refresh" content="0;url=http://people.cs.uct.ac.za/~dbseug001/../pages/browserWarning.html"/>
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link rel="stylesheet" href="../css/materialize.min.css">
@@ -21,7 +22,9 @@
     <![endif]-->
     <script src="../js/compatability.js"></script>
 </head>
+
 <main>
+
     <ul id="dropdown1" class="dropdown-content">
         <li><a href="project.html">Overview</a></li>
         <li><a href="#!">Games in Education</a></li>
@@ -29,25 +32,30 @@
     </ul>
     <nav>
         <div id="top" class="nav-wrapper indigo">
-            <a id="mainName" href="../../" class="brand-logo"><i class="right left mdi-action-home"></i>PyTeacher</a>
-            <a href="#!" data-activates="mobile-demo" class="button-collapse"><i id="rightShift" class="mdi-navigation-menu"></i></a>
+            <a id="mainName" href="../../index.html" class="brand-logo"><i class="right left mdi-action-home"></i>PyTeacher</a>
+            <a href="#!" data-activates="mobile-demo" class="button-collapse"><i id="rightShift"
+                                                                                 class="mdi-navigation-menu"></i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a id="compFix" class="dropdown-button" href="#!" data-activates="dropdown1">Components Breakdown<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li class="active"><a id="compFix" class="dropdown-button" href="#!" data-activates="dropdown1">Components
+                    Breakdown<i class="material-icons right">arrow_drop_down</i></a></li>
                 <li><a class="modal-trigger" href="#supModal">Supervisors</a></li>
                 <li><a class="modal-trigger" href="#teamModal">The Team</a></li>
                 <li><a href="time.html">Timeline</a></li>
                 <li><a href="downloads.html">Downloads</a></li>
                 <li><a href="data.html">Appendicies</a></li>
+                <li><a href="credits.html">Credits</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
                 <li class="no-padding">
                     <ul class="collapsible collapsible-accordion">
-                        <li>
+                        <li class="active" style="background-color: #eeeeee !important;">
                             <a class="collapsible-header">Components Breakdown</a>
+
                             <div class="collapsible-body">
                                 <ul>
                                     <li><a href="project.html">Overview</a></li>
-                                    <li><a href="#!">Games in Education</a></li>
+                                    <li class="active" style="background-color: #dddddd !important;"><a
+                                            class="black-text" href="#!">Games in Education</a></li>
                                     <li><a href="mark.html">Flow in Educational Games</a></li>
                                 </ul>
                             </div>
@@ -59,6 +67,7 @@
                 <li><a href="time.html">Timeline</a></li>
                 <li><a href="downloads.html">Downloads</a></li>
                 <li><a href="data.html">Appendicies</a></li>
+                <li><a href="credits.html">Credits</a></li>
             </ul>
         </div>
     </nav>
@@ -66,16 +75,53 @@
     <div class="container">
         <div class="row">
             <div col="col m12">
-                <h1 class="center-align">
-                    TEST
-                </h1>
+                <div class="row">
+                    <div id="E_intro" class="col s12 m9 l10 section scrollspy">
+                        <h2>Visual Learning and Games in Education</h2>
+
+                        <div class="borderAdd"></div>
+                        <h3>Introduction</h3>
+
+                        <p class="infoText">The face of education is changing. Traditional methods of teaching
+                            students Computer Science concepts may no longer be the most effective way to do so.
+                            There are various tools that have been designed with the aims of visualising algorithms
+                            or data structures in order to make them easier to understand. However, there has been a
+                            lack of adoption of these kinds of tools in the classroom and some studies have shown
+                            mixed results in the use of these tools.
+
+                            Video games are a common and very popular form of entertainment in recent times, with
+                            even poorer households having access to them through mobile phones, for example.
+                        </p>
+                    </div>
+                    <div id="E_stuff" class="col s12 m9 l10 section scrollspy">
+                        <h3>Stuff</h3>
+
+                        <p>
+                            PyTeacher aims to bring the idea of a video game into the light of Computer Science
+                            education. The way it achieves this is by giving players control of an avatar (a
+                            quadrocopter), which they control through the use of real Python 3.x syntax source code.
+                            The user provides the source code to the system and it interprets this and performs
+                            actions based on what the user has coded.
+                            Blender is utilized as the game engine
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+
+    <div id="toc" class="col hide-on-small-only m3 l2">
+        <ul class="section table-of-contents">
+            <li><a href="#E_intro">Introduction</a></li>
+            <li><a href="#appB">Appendix B - Design Documents</a></li>
+            <li><a href="#graphsSpy">Appendix C - Graphs</a></li>
+        </ul>
     </div>
 
     <div id="teamModal" class="modal modal-fixed-footer">
         <div class="modal-content">
             <h4>PyTeacher - The Team</h4>
+
             <div class="borderAdd"></div>
             <div class="row">
                 <div class="spacer" class="col s12">
@@ -93,8 +139,10 @@
 
                                 <tbody>
                                 <tr>
-                                    <td><a href="mailto:debeste.eugene@gmail.com" target="_blank">debeste.eugene@gmail.com</a></td>
-                                    <td><a href="https://za.linkedin.com/pub/eugene-de-beste/91/35/11" target="_blank">eugene-de-beste</a></td>
+                                    <td><a href="mailto:debeste.eugene@gmail.com" target="_blank">debeste.eugene@gmail.com</a>
+                                    </td>
+                                    <td><a href="https://za.linkedin.com/pub/eugene-de-beste/91/35/11" target="_blank">eugene-de-beste</a>
+                                    </td>
                                     <td><a href="https://Github.com/Banshee1221" target="_blank">Banshee1221</a></td>
                                 </tr>
                                 </tbody>
@@ -119,14 +167,16 @@
 
                                 <tbody>
                                 <tr>
-                                    <td><a class="textWrapper" href="mailto:markgrivainis@gmail.com" target="_blank">markgrivainis@gmail.com</a></td>
-                                    <td><a href="https://github.com/MarkGrivainis" target="_blank">MarkGrivainis</a></td>
+                                    <td><a class="textWrapper" href="mailto:markgrivainis@gmail.com" target="_blank">markgrivainis@gmail.com</a>
+                                    </td>
+                                    <td><a href="https://github.com/MarkGrivainis" target="_blank">MarkGrivainis</a>
+                                    </td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="col m4">
-                            <img class="circle resp-img" src="../img/Mark.jpg" style="width:200px;" >
+                            <img class="circle resp-img" src="../img/Mark.jpg" style="width:200px;">
                         </div>
                     </div>
                 </div>
@@ -140,7 +190,8 @@
     <div id="supModal" class="modal modal-fixed-footer">
         <div class="modal-content">
             <h4>PyTeacher - Supervisors</h4>
-            <div id="borderAdd"></div>
+
+            <div class="borderAdd"></div>
             <div class="row">
                 <div class="spacer" class="col s12">
                     <div class="row">
@@ -156,7 +207,8 @@
 
                                 <tbody>
                                 <tr>
-                                    <td><a href="mailto:gstewart@cs.uct.ac.za" target="_blank">gstewart@cs.uct.ac.za</a></td>
+                                    <td><a href="mailto:gstewart@cs.uct.ac.za" target="_blank">gstewart@cs.uct.ac.za</a>
+                                    </td>
                                     <td>+27 21 650 2665</td>
                                 </tr>
                                 </tbody>
@@ -182,15 +234,17 @@
 
                                 <tbody>
                                 <tr>
-                                    <td><a class="textWrapper" href="mailto:jgain@cs.uct.ac.za" target="_blank">jgain@cs.uct.ac.za</a></td>
+                                    <td><a class="textWrapper" href="mailto:jgain@cs.uct.ac.za" target="_blank">jgain@cs.uct.ac.za</a>
+                                    </td>
                                     <td>+27 21 650 4058</td>
-                                    <td><a class="textWrapper" href="http://people.cs.uct.ac.za/~jgain/" target="_blank">jgain@UCT</a></td>
+                                    <td><a class="textWrapper" href="http://people.cs.uct.ac.za/~jgain/"
+                                           target="_blank">jgain@UCT</a></td>
                                 </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="col m4">
-                            <img class="circle resp-img" src="../img/james.jpg" style="width:200px;height:200px;" >
+                            <img class="circle resp-img" src="../img/james.jpg" style="width:200px;height:200px;">
                         </div>
                     </div>
                 </div>
@@ -202,31 +256,12 @@
     </div>
 </main>
 
-<footer class="page-footer indigo lighten-1">
-    <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">Credits</h5>
-                <p class="grey-text text-lighten-4">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>
-                    <br />Responsive <a href="http://bootsnipp.com/snippets/featured/timeline-responsive">Timeline</a> by <a href="http://bootsnipp.com/luisrudge">luisrudge</a></p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                    <li><a class="grey-text text-lighten-3" href="http://www.cs.uct.ac.za/">UCT Computer Science</a></li>
-                    <li><a class="grey-text text-lighten-3" href="https://www.blender.org/">Blender</a></li>
-                    <li><a class="grey-text text-lighten-3" href="https://www.python.org/">Python</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="footer-copyright indigo">
-        <div class="container">
-            Last Updated: 15/11/2015
+<footer>
+    <div class="indigo">
+        <div class="footer-copyright container light" style="color:rgba(255,255,255,0.8)">
+            Last Updated: 16/11/2015
         </div>
     </div>
 </footer>
 
-
-</body>
 </html>

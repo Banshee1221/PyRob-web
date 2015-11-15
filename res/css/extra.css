@@ -1,9 +1,10 @@
-body{
+body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
     background-color: #eeeeee
 }
+
 main {
     flex: 1 0 auto;
 }
@@ -15,36 +16,46 @@ main {
 #graphsText {
     text-align: center;
 }
+
 #navWrap {
     height: 314px;
 }
-#extender{
+
+.promo-caption {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#extender {
     position: relative;
     height: 250px;
 }
 
-#downBut1{
+#downBut1 {
     position: absolute;
     right: calc(50% - 97.3595px);
-    top:50%;
+    top: 50%;
 }
 
-#downBut2{
+#downBut2 {
     position: absolute;
     right: calc(50% - 97.3595px);
-    top:calc(50% + 54px);
+    top: calc(50% + 54px);
 }
 
-.brand-logo{
+.brand-logo {
     left: 50px;
 }
 
-#titleBox{
+#titleBox {
     width: 100%;
     height: 100%;
 }
 
-#title{
+#title {
     width: 100%;
     margin-top: -20px !important;
     margin-bottom: 0px;
@@ -77,8 +88,8 @@ main {
     width: 79px;
 }
 
-.spacer{
-   margin-bottom: 50px;
+.spacer {
+    margin-bottom: 50px;
 }
 
 .borderAdd {
@@ -87,7 +98,7 @@ main {
     margin-bottom: 20px;
 }
 
-.resp-img{
+.resp-img {
     position: absolute;
     margin-top: 20px;
     margin-bottom: -20px;
@@ -105,52 +116,83 @@ table.new-table {
     border-spacing: 0;
     display: block;
     position: relative;
-    /* sort out borders */ }
+    /* sort out borders */
+}
+
 table.new-table th, table.new-table td {
     margin: 0;
-    vertical-align: top; }
+    vertical-align: top;
+}
+
 table.new-table th {
-    text-align: left; }
+    text-align: left;
+}
+
 table.new-table thead {
     display: block;
-    float: left; }
+    float: left;
+}
+
 table.new-table thead tr {
     display: block;
-    padding: 0 10px 0 0; }
+    padding: 0 10px 0 0;
+}
+
 table.new-table thead tr th::before {
-    content: "\00a0"; }
+    content: "\00a0";
+}
+
 table.new-table tbody {
     display: block;
     width: auto;
     position: relative;
     overflow-x: auto;
-    white-space: nowrap; }
+    white-space: nowrap;
+}
+
 table.new-table tbody tr {
     display: inline-block;
-    vertical-align: top; }
+    vertical-align: top;
+}
+
 table.new-table th {
     display: block;
-    text-align: right; }
+    text-align: right;
+}
+
 table.new-table td {
     display: block;
     min-height: 1.25em;
-    text-align: left; }
+    text-align: left;
+}
+
 table.new-table tr {
-    padding: 0 10px; }
+    padding: 0 10px;
+}
+
 table.new-table thead {
     border: 0;
-    border-right: 1px solid #d0d0d0; }
+    border-right: 1px solid #d0d0d0;
+}
+
 table.new-table.bordered th {
     border-bottom: 0;
-    border-left: 0; }
+    border-left: 0;
+}
+
 table.new-table.bordered td {
     border-left: 0;
     border-right: 0;
-    border-bottom: 0; }
+    border-bottom: 0;
+}
+
 table.new-table.bordered tr {
-    border: 0; }
+    border: 0;
+}
+
 table.new-table.bordered tbody tr {
-    border-right: 1px solid #d0d0d0; }
+    border-right: 1px solid #d0d0d0;
+}
 
 .lineStyle {
     height: 12px;
@@ -372,6 +414,10 @@ table.new-table.bordered tbody tr {
     .projImg {
         width: 100%;
     }
+
+    #projectPage {
+        margin-top: -100px;
+    }
 }
 
 .projImg {
@@ -392,5 +438,21 @@ table.new-table.bordered tbody tr {
 
 #toc {
     margin-top: -70px;
+}
+
+.infoText {
+    font-size: small;
+}
+
+#projectPage {
+    margin-top: 100px;
+}
+
+.item-tab {
+    padding-left: 3em
+}
+
+#tabber {
+    padding-left: 3em;
 }
 
