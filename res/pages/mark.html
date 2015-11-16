@@ -11,9 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link rel="stylesheet" href="../css/materialize.min.css">
     <link rel="stylesheet" href="../css/extra.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../css/material_icons.css" rel="stylesheet">
     <!--[if !(IE)]><!-->
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../js/jquery-2.1.1.min.js"></script>
     <script src="../js/materialize.min.js"></script>
     <script src="../js/extra.js"></script>
     <!--<![endif]-->
@@ -28,7 +28,7 @@
     <ul id="dropdown1" class="dropdown-content">
         <li><a href="project.html">Overview</a></li>
         <li><a href="eugene.html">Games in Education</a></li>
-        <li><a href="#!">Flow in Educational Games</a></li>
+        <li><a href="#!">PyTeacher Flow Experience</a></li>
     </ul>
     <nav>
         <div id="top" class="nav-wrapper indigo">
@@ -55,7 +55,7 @@
                                     <li><a href="project.html">Overview</a></li>
                                     <li><a href="eugene.html">Games in Education</a></li>
                                     <li class="active" style="background-color: #dddddd !important;"><a
-                                            class="black-text" href="#!">Flow in Educational Games</a></li>
+                                            class="black-text" href="#!">PyTeacher Flow Experience</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -70,10 +70,68 @@
         </div>
     </nav>
 
+    <div class="container">
+        <div class="row">
+            <div col="col m12">
+                <div class="row">
+                    <div id="M_intro" class="col s12 m9 l10 section scrollspy">
+                        <h2>The Flow Experience of PyTeacher</h2>
+                        <div class="borderAdd"></div>
+                        <h3>Introduction</h3>
+                        <p>Learning to program is a daunting task for any student. Fundamental concepts such as loops can be hard to visualise, as programs return the end result without showing the means by which this is obtained. Visual Programming Environments offer a means to teach these concepts in a way that permits students to follow the steps of their program while it executes. This is achieved by allowing students to see which line of code is currently being executed and offering a visual means for observing the state of the program. To go one step further, using VPEs in a game format would enable students to learn programming in a fun environment.  The games would need to be entertaining and challenging to the students; challenging enough to keep them interested but not too difficult to cause a state of anxiety or frustration. Ultimately when developing a game, one desires the user to be totally involved in this endeavour resulting in what is termed a state of flow. The higher the students’ flow, the more engaged they become in the activity, thereby increasing their concentration and learning ability.
+                        </p>
+                    </div>
+                    <div id="M_back" class="col s12 m9 l10 section scrollspy">
+                        <h3>Background</h3>
+                        <h5>Visual Programming Environments</h5>
+                        <p>
+                            Traditionally programming is taught to students using a Software Development Kit. The issue with this approach is that students who are learning basic algorithmic thinking will only use a fraction of the tools made available to them. In contrast Visual Programming Environments offer the functionality for students to learn these programming concepts in a more visual environment. Many of these environments use graphical elements to represent programming constructs rather than representing them textually. This simplifies the learning process as these graphical elements are used in conjunction with each other to form working programs. Other environments use a subset of existing programming languages which allows users to gain a better understanding of the introductory principles of programming. Visual Programming Environments often feature a stage which users can control using the programming constructs that are provided by the program. This virtual stage allows users to create animations or games that are controlled by the user created scripts.
+                        </p>
+                        <h5>Flow</h5>
+                        <p>
+                            Flow is a mental state that is entered when one is fully absorbed in the activity that one is performing. Whether these activities offer an external reward or not does not affect whether a flow state is achieved. A state of flow is often described as a feeling of being ‘in the zone’, where actions are performed almost of their own accord and there is a feeling of total confidence in the task at hand. Flow was measured using the Flow Short Scale survey which has been validated and shown to be successful in measuring the flow experience. This survey consists of ten questions which are designed to measure different characteristics that lead to a state of flow. The results for each individual are added together and then divided by ten in order to calculate a Flow score. This score varies between one (very low Flow experience) and seven (very high Flow experience).
+                        </p>
+                    </div>
+                    <div id="M_goal" class="col s12 m9 l10 section scrollspy">
+                        <h3>Goals</h3>
+                        <p>
+                            To determine whether students interacting with a Game Based Visual Programming Environment experience a state of flow.
+                        </p>
+                    </div>
+                    <div id="M_result" class="col s12 m9 l10 section scrollspy">
+                        <h3>Results</h3>
+                        <p>
+                            Results show that flow is experienced by the nine participating students. Two students obtained a very high flow score that was slightly above six, four students obtained scores ranging between five and six and three students obtained a score between four and five (Figure 1). This very good level of flow can be attributed to both the game playing experience and the act of programming. Programming is a form of problem solving and requires concentration and understanding which on its own can lead to a good flow experience.
+                        </p>
+                        <figure>
+                            <img class="responsive-img" src="../img/mark_graph.jpg" alt="Flow short scale scores for the nine students">
+                            <figcaption style="font-weight: bold;">Figure 1: Flow short scale scores for the nine students</figcaption>
+                        </figure>
+                    </div>
+                    <div id="M_conclusion" class="col s12 m9 l10 section scrollspy">
+                        <h3>Conclusions</h3>
+                        <p>
+                            Measuring the flow experience of students while playing PyTeacher has shown that a Game Based Visual Programming Environment can lead to a state of flow. Students found the experience of playing PyTeacher challenging and engaging which lead to a positive flow state. As the number of students who participated in the survey  was low (9) the results are not conclusive. The use of a Game Based Visual Programming Environment could be beneficial in aiding students new to Computer Science in learning introductory programming.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="toc" class="col hide-on-small-only m3 l2">
+        <ul class="section table-of-contents">
+            <li><a href="#M_intro">Introduction</a></li>
+            <li><a href="#M_back">Background</a></li>
+            <li><a href="#M_goal">Goals</a></li>
+            <li><a href="#M_result">Results</a></li>
+            <li><a href="#M_conclusion">Conclusion</a></li>
+        </ul>
+    </div>
+
     <div id="teamModal" class="modal modal-fixed-footer">
         <div class="modal-content">
             <h4>PyTeacher - The Team</h4>
-
             <div class="borderAdd"></div>
             <div class="row">
                 <div class="spacer" class="col s12">
@@ -142,7 +200,6 @@
     <div id="supModal" class="modal modal-fixed-footer">
         <div class="modal-content">
             <h4>PyTeacher - Supervisors</h4>
-
             <div class="borderAdd"></div>
             <div class="row">
                 <div class="spacer" class="col s12">
