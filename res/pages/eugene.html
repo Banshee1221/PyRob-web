@@ -108,12 +108,78 @@
                     </div>
                     <div id="E_goal" class="col s12 m9 l10 section scrollspy">
                         <h3>Goals for the Project</h3>
-
                         <p>
                             The main goal for the project was to design and implement a basic video game that uses
                             Python syntax as a way to interact with the player avatar. This provided a platform for
                             experiments to be conducted to determine whether students would have an interest in such a
                             concept and whether they found it entertaining and potentially beneficial.
+                        </p>
+                    </div>
+                    <div id="E_implementation" class="col s12 m9 l10 section scrollspy">
+                        <h3>Implementation Details</h3>
+                        <h5>Overview</h5>
+                        <p>
+                            Using Blender for its game engine component, two main sections were developed. The front-end
+                            comprised of the user interface and graphical component. This was everything that the player would
+                            see, except for the level structure, which was part of the back-end. The back-end covered the
+                            development of the game logic, such as managing the player avatar movement, object collisions, 
+                            which conditions govern progression in the game and the user Python code interpretation.
+                        </p>
+                        <h5>Python Code Interpretation</h5>
+                        <p>
+                            This was the biggest aspect of the project. The user interacts with the game by providing Python 3 based
+                            source code in order to get the player avatar to do things. The way this works is detailed below: <br/>
+                            The source code that a player types is passed from the front-end to the code interpretation module. This 
+                            code string is put through two tests, a syntax tree breakdown and direct evaluation of the code.</p>
+
+                            <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3
+4
+5
+6</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">valid_check</span>(code):
+    <span style="color: #008800; font-weight: bold">try</span>:
+        node <span style="color: #333333">=</span> ast<span style="color: #333333">.</span>parse(code)
+    <span style="color: #008800; font-weight: bold">except</span> <span style="color: #FF0000; font-weight: bold">SyntaxError</span>:
+        <span style="color: #008800; font-weight: bold">return</span> <span style="color: #007020">False</span>
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #007020">True</span>
+</pre></td></tr></table></div>
+                        <p class="center-align" style="font-weight: bold;margin-top:0px;">Code Snippet 1: AST validation of user code</p>
+
+                            <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3
+4
+5</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">try</span>:
+    codeobj <span style="color: #333333">=</span> <span style="color: #007020">compile</span>(<span style="color: #007020">str</span>(<span style="color: #007020">self</span><span style="color: #333333">.</span>text), <span style="background-color: #fff0f0">&#39;&lt;string &gt;&#39;</span>, <span style="background-color: #fff0f0">&#39;exec&#39;</span>)
+    <span style="color: #007020">eval</span>(codeobj , <span style="color: #007020">globals</span>(), <span style="color: #007020">locals</span>())
+<span style="color: #008800; font-weight: bold">except</span> <span style="color: #FF0000; font-weight: bold">Exception</span> <span style="color: #008800; font-weight: bold">as</span> e:
+    <span style="color: #008800; font-weight: bold">return</span> <span style="color: #007020">str</span>(e)
+</pre></td></tr></table></div>
+                        <p class="center-align" style="font-weight: bold;margin-top:0px;">Code Snippet 2: Compilation and evaluation</p>
+                        <p>
+                            If either of these checks fail, the user is returned an error code which informs them of what they did wrong
+                            the same way that Python would normally return an error to a user. <br /><br /> The source code that the user 
+                            provides builds a stack of commands for the game to perform. These commands are then executed and the player
+                            can see the result of it on the game window.
+                        </p>
+                    </div>
+                    <div id="E_results" class="col s12 m9 l10 section scrollspy">
+                        <h3>Results</h3>
+                        <p>
+                            Feasibility and user testing sessions were performed on whether students from the first year University of Cape
+                            Town Computer Science course. These sessions challenged the students to play through some of the levels of the 
+                            game and give feedback on their experiences. From this it was determined that students found the games' mechanics
+                            interesting and have a keen interest in having such a game accompany them in their course work. Detailed graphs of
+                            the results from the feedback can be found at <a href="data.html">this</a> page under appendix C.
+                        </p>
+                    </div>
+                    <div id="E_conclusion" class="col s12 m9 l10 section scrollspy">
+                        <h3>Conclusions</h3>
+                        <p>
+                            In this experiment, it was found that using such a tool in the classroom could be beneficial. Learning to program can
+                            be difficult, and students have an interest in using a program that is engaging and useful for them to explore their thinking.
+                            This concept could stand to benefit from further research and a bigger focus on the implementation of the game itself.
                         </p>
                     </div>
                 </div>
@@ -126,6 +192,8 @@
             <li><a href="#E_intro">Introduction</a></li>
             <li><a href="#E_back">Background</a></li>
             <li><a href="#E_goal">Goals for the Project</a></li>
+            <li><a href="#E_implementation">Implementation</a></li>
+            <li><a href="#E_results">Results</a></li>
         </ul>
     </div>
 
