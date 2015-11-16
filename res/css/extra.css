@@ -1,3 +1,6 @@
+html{
+    font-family: Arial, Helvetica, sans-serif
+}
 body {
     display: flex;
     min-height: 100vh;
@@ -18,7 +21,7 @@ main {
 }
 
 #navWrap {
-    height: 314px;
+    height: 214px;
 }
 
 .promo-caption {
@@ -31,7 +34,7 @@ main {
 
 #extender {
     position: relative;
-    height: 250px;
+    height: 150px;
 }
 
 #downBut1 {
