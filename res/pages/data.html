@@ -17,7 +17,7 @@
     <script src="../js/materialize.min.js"></script>
     <script src="../js/extra.js"></script>
     <script src="../js/highcharts.js"></script>
-    <script src="../js/graphs.js"></script>
+    <script src="../js/redir.js"></script>
     <!--<![endif]-->
     <!--[if lt IE 9]>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -37,8 +37,8 @@
             <a href="#!" data-activates="mobile-demo" class="button-collapse"><i id="rightShift"
                                                                                  class="mdi-navigation-menu"></i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a id="compFix" class="dropdown-button" href="#!" data-activates="dropdown1">Components Breakdown<i
-                        class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a id="compFix" class="dropdown-button right-align" href="#!" data-activates="dropdown1">Components<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
                 <li><a class="modal-trigger" href="#supModal">Supervisors</a></li>
                 <li><a class="modal-trigger" href="#teamModal">The Team</a></li>
                 <li><a href="downloads.html">Downloads</a></li>
@@ -49,7 +49,7 @@
                 <li class="no-padding">
                     <ul class="collapsible collapsible-accordion">
                         <li>
-                            <a class="collapsible-header">Components Breakdown</a>
+                            <a class="collapsible-header">Components</a>
 
                             <div class="collapsible-body">
                                 <ul>
@@ -74,102 +74,56 @@
         <div class="row">
             <div id="appA" class="col s12 m9 l10 section scrollspy">
                 <div class="page-header">
-                    <h1>Appendix A - Ethical Clearance</h1>
-
+                    <h2>Appendix A - Ethical Clearance</h2>
                     <div class="borderAdd"></div>
                 </div>
-                <div align="center" id="centered_embed">
-                    <div id="colFix" class="col l6">
-                        <h4 id="ICF">Informed Consent Form</h4>
-                        <embed src="../img/appendicies/consent.pdf" width="90%" height="480" alt="pdf"
-                               pluginspage="http://www.adobe.com/products/acrobat/readstep2.html"></embed>
-                        <a target="_blank" href="../img/appendicies/consent.pdf"><p class="center-align">Open In New
-                            Tab</p></a>
-                    </div>
-                    <div class="col l6">
-                        <h4 id="DoSA">Department of Student Affairs Clearance</h4>
-                        <embed src="../img/appendicies/DSA.pdf" width="90%" height="480" alt="pdf"
-                               pluginspage="http://www.adobe.com/products/acrobat/readstep2.html"></embed>
-                        <a target="_blank" href="../img/appendicies/DSA.pdf"><p class="center-align">Open In New Tab</p>
-                        </a>
-                    </div>
-                    <div class="col l6">
-                        <h4 id="DoCS">Department of Computer Science Clearance</h4>
-                        <embed src="../img/appendicies/FSREC.pdf" width="90%" height="480" alt="pdf"
-                               pluginspage="http://www.adobe.com/products/acrobat/readstep2.html"></embed>
-                        <a target="_blank" href="../img/appendicies/FSREC.pdf"><p class="center-align">Open In New
-                            Tab</p></a>
-                    </div>
-                </div>
+                <h5 id="ICF">Informed Consent Form</h5>
+                <a target="_blank" href="../img/appendicies/consent.pdf"><p>Click Here</p></a>
+
+                <h5 id="DoSA">Department of Student Affairs Clearance</h5>
+                <a target="_blank" href="../img/appendicies/DSA.pdf"><p>Click Here</p>
+                </a>
+            
+                <h5 id="DoCS">Department of Computer Science Clearance</h5>
+                <a target="_blank" href="../img/appendicies/FSREC.pdf"><p>Click Here</p></a>
             </div>
 
             <div id="appB" class="col s12 m9 l10 section scrollspy">
                 <div class="page-header">
-                    <h1 class="center-align">Appendix B - Design Documents</h1>
-
+                    <h2>Appendix B - Design Documents</h2>
                     <div class="borderAdd"></div>
                 </div>
-                <div class="col l6">
-                    <h4 id="PP">Paper Prototype Assets</h4>
-                    <img src="../img/appendicies/Papertest.png" width="90%"/>
-                    <a target="_blank" href="../img/appendicies/Papertest.png"><p class="center-align">Open In New
-                        Tab</p></a>
-                </div>
-                <div class="col l6">
-                    <h4 id="GDD">Game Design Document</h4>
-                    <iframe src="https://docs.google.com/document/d/16y81xRh4uQmo4M-5gxxB-Tu_WG1OxjQAbouwDhNryPw/pub?embedded=true"
-                            width="90%" height="480"></iframe>
+                    <h5 id="PP">Paper Prototype Assets</h5>
+                    <a target="_blank" href="../img/appendicies/Papertest.png"><p>Click Here</p></a>
+                    <h5 id="GDD">Game Design Document</h5>
                     <a target="_blank"
                        href="https://docs.google.com/document/d/16y81xRh4uQmo4M-5gxxB-Tu_WG1OxjQAbouwDhNryPw/edit?usp=sharing">
-                        <p class="center-align">Open In New Tab</p></a>
-                </div>
-                <div class="col l6">
-                    <h4 id="TDD">Technical Design Document</h4>
-                    <iframe src="https://docs.google.com/document/d/1wU4OLVBPdU4p4v3-YW-vZkHz2wEoXiewj2oUve0X954/pub?embedded=true"
-                            width="90%" height="480"></iframe>
+                        <p>Click Here</p></a>
+                    <h5 id="TDD">Technical Design Document</h5>
                     <a target="_blank"
                        href="https://docs.google.com/document/d/1wU4OLVBPdU4p4v3-YW-vZkHz2wEoXiewj2oUve0X954/edit?usp=sharing">
-                        <p class="center-align">Open In New Tab</p></a>
-                </div>
+                        <p>Click Here</p></a>
+ 
             </div>
 
             <div id="graphsSpy" class="col s12 m9 l10 section scrollspy">
                 <div id="graphs" class="page-header">
-                    <h1>Appendix C - Graphs</h1>
+                    <h2>Appendix C - Graphs</h2>
+                    <div class="borderAdd"></div>
+                    <a href="graphs.html">Click Here for External Link</a>
+                </div>
+            </div>
 
+            <div id="timeSpy" class="col s12 m9 l10 section scrollspy">
+                <div class="page-header">
+                    <h2>Appendix D - Timeline</h2>
                     <div class="borderAdd"></div>
                 </div>
-                <div class="col m6 overrideCol">
-                    <div id="chartContainer1" style="width:100%; height:400px;"></div>
-                </div>
-                <div class="col m6 overrideCol">
-                    <div id="chartContainer2" style="width:100%; height:400px;"></div>
-                </div>
-
-                <div class="col m6 overrideCol">
-                    <div id="chartContainer3" style="width:100%; height:400px;"></div>
-                </div>
-                <div class="col m6 overrideCol">
-                    <div id="chartContainer4" style="width:100%; height:400px;"></div>
-                </div>
-
-                <div class="col m6 overrideCol">
-                    <div id="chartContainer5" style="width:100%; height:400px;"></div>
-                </div>
-                <div class="col m6 overrideCol">
-                    <div id="chartContainer6" style="width:100%; height:400px;"></div>
-                </div>
-                <div class="col s12">
-                    <div id="chartContainer7" style="width:100%; height:400px;"></div>
-                </div>
-                <div class="col m4 overrideCol">
-                    <div id="chartContainer8" style="width:100%; height:400px;"></div>
-                </div>
-                <div class="col m4 overrideCol">
-                    <div id="chartContainer9" style="width:100%; height:400px;"></div>
-                </div>
-                <div class="col m4 overrideCol">
-                    <div id="chartContainer10" style="width:100%; height:400px;"></div>
+                <p class="center-align">Click the Image to View</p>
+                <div style='width:90%; margin:0 auto; background:#eeeeee; border:1px #cbcbcb solid;'>
+                    <!--<iframe src='https://teamgantt.com/gantt/schedule/?ids=388327&public_keys=yLBlRLBXGw2f&zoom=d100&font_size=12&estimated_hours=0&assigned_resources=0&percent_complete=0&documents=0&comments=0&col_width=355&menu_view=1&resource_filter=1&name_in_bar=0&name_next_to_bar=0&resource_names=1' style='width:100%; height:800px; border-bottom:1px #cbcbcb solid;' frameborder='0';></iframe>
+                    <a href='http://teamgantt.com' target='_blank' style='display:block; text-align:right; background:url(https://teamgantt.com/images/powered_by_teamgantt.png) right center no-repeat; height:0; padding-top:20px; overflow:hidden; padding-right:1px;'>Online Gantt Chart</a>-->
+                    <a href="../img/gantt.jpg" target="_blank"><img class="responsive-img" src="../img/gantt_preview.jpg"/></a>
                 </div>
             </div>
 
@@ -178,6 +132,7 @@
                     <li><a href="#appA">Appendix A - Ethical Clearance</a></li>
                     <li><a href="#appB">Appendix B - Design Documents</a></li>
                     <li><a href="#graphsSpy">Appendix C - Graphs</a></li>
+                    <li><a href="#timeSpy">Appendix D - Timeline</a></li>
                 </ul>
             </div>
         </div>
@@ -186,7 +141,6 @@
     <div id="teamModal" class="modal modal-fixed-footer">
         <div class="modal-content">
             <h4>PyTeacher - The Team</h4>
-
             <div class="borderAdd"></div>
             <div class="row">
                 <div class="spacer" class="col s12">
